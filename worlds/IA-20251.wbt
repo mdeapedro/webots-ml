@@ -1,0 +1,237 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/adept/pioneer3/protos/Pioneer3at.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.5435365891114871 0.5984018544442214 -0.5886282331784359 2.1390945673713007
+  position 0.5786944100600325 0.2652070057760295 12.236718587685166
+  followType "None"
+}
+TexturedBackground {
+  skyColor [
+    1 0.921569 0.643137
+  ]
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 4.5 4.5
+  floorAppearance NULL
+  wallHeight 0.3
+}
+Pioneer3at {
+  hidden position_0_0 -2.7367349221060315e-10
+  hidden position_0_1 -2.736775721559948e-10
+  hidden position_0_2 -2.7348079356670496e-10
+  hidden position_0_3 -2.7348434628038376e-10
+  hidden rotation_3 0.577351598973008 -0.5773475989758288 -0.5773516096107782 2.0944049893623022
+  hidden rotation_4 0.5773515994800195 -0.5773475994828353 -0.5773516085967637 2.094404990883321
+  hidden rotation_5 0.5773516062369851 -0.577347606239681 -0.5773515950829992 2.0944050111539085
+  hidden rotation_6 0.5773516059780925 -0.5773476059807907 -0.5773515956007803 2.0944050103772374
+  translation -1.811861309489523 1.831535466539403 -0.0023889303745918966
+  rotation 2.370347948220006e-05 5.9725814801046534e-05 -0.9999999979354859 0.7854456028208615
+  controller "my_controller"
+  extensionSlot [
+    Lidar {
+    }
+    Camera {
+      translation 0.25 0 0.24
+    }
+  ]
+}
+SolidBox {
+  translation 0.708464 -1.38034 0.43
+  rotation 0 0 1 -1.3089953071795861
+  size 0.5 0.5 0.9
+  appearance PBRAppearance {
+    baseColor 1 0 0
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -1.24925 0.460737 0.3
+  rotation 0 0 -1 0.261796
+  name "box(1)"
+  size 0.6 0.8 0.8
+  appearance PBRAppearance {
+    baseColor 1 0 0
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -1.57095 -1.4525 0.3
+  rotation 0 0 1 0.523602
+  name "box(3)"
+  size 0.3 1.2 0.8
+  appearance PBRAppearance {
+    baseColor 1 0 0
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 1.13961 1.38342 0.25
+  rotation 0 0 1 1.0472016938995747
+  name "box(2)"
+  size 0.5 0.8 0.5
+  appearance PBRAppearance {
+    baseColor 1 0 0
+    roughness 0.5
+    metalness 0
+  }
+}
+Solid {
+  translation -0.8674555256080185 0.19962881482020253 0.09991366756577301
+  rotation -0.07764436645193618 -0.9003530884695852 0.4281771460990842 0.630712899659307
+  children [
+    DEF BALL_SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 0.027451 0.12549 1
+        roughness 0.3
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.1
+        subdivision 4
+      }
+    }
+  ]
+  name "blue-ball"
+  model "ball"
+  boundingObject USE BALL_SHAPE
+  locked TRUE
+}
+Solid {
+  translation 0.495359 0.103811 0.454441
+  rotation 0.21474211348361782 0.5443457949563361 -0.8109090455839937 0.2027306374458197
+  children [
+    DEF BALL_SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 0.027451 0.12549 1
+        roughness 0.3
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.45
+        subdivision 4
+      }
+    }
+  ]
+  name "blue-ball(1)"
+  model "ball"
+  boundingObject USE BALL_SHAPE
+  locked TRUE
+}
+Solid {
+  translation -0.5907714191230301 -0.8591228849888864 0.29991366983862827
+  rotation -0.5840161077916076 -0.23776607968266958 -0.7761394701935185 0.3058638802574682
+  children [
+    DEF BALL_SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 0.027451 0.12549 1
+        roughness 0.3
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.3
+        subdivision 4
+      }
+    }
+  ]
+  name "blue-ball(2)"
+  model "ball"
+  boundingObject USE BALL_SHAPE
+  locked TRUE
+}
+Solid {
+  translation 0.287378 1.49634 0.230253
+  rotation -0.3405592534542093 -0.6665920556295151 0.6630795022154803 0.005945836641349993
+  children [
+    DEF BALL_SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 0.027451 0.12549 1
+        roughness 0.3
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.23
+        subdivision 4
+      }
+    }
+  ]
+  name "blue-ball(3)"
+  model "ball"
+  boundingObject USE BALL_SHAPE
+  locked TRUE
+}
+Solid {
+  translation 1.8098832523150605 -1.7397171830982112 0.0999136719999644
+  rotation 0.5236715939624836 0.21842389163525378 -0.8234434195739879 0.0022671155441386925
+  children [
+    DEF BALL_SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.666667 0
+        roughness 0.3
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.1
+        subdivision 4
+      }
+    }
+  ]
+  name "objective"
+  model "ball"
+  boundingObject USE BALL_SHAPE
+  locked TRUE
+}
+Solid {
+  translation 1.51884 0.751898 0.118594
+  rotation -0.23666116269894222 0.6288669698456469 0.7406198946201344 0.6448754944911029
+  children [
+    DEF BALL_SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 0.027451 0.12549 1
+        roughness 0.3
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.16
+        subdivision 4
+      }
+    }
+  ]
+  name "blue-ball(4)"
+  model "ball"
+  boundingObject USE BALL_SHAPE
+  locked TRUE
+}
+Solid {
+  translation 1.9031504191882256 -0.7255197437142666 0.2999136719999202
+  rotation 0.3033481353732694 -0.3877209482439641 -0.870432292058585 0.04522635409985362
+  children [
+    DEF BALL_SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 0.027451 0.12549 1
+        roughness 0.3
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.3
+        subdivision 4
+      }
+    }
+  ]
+  name "blue-ball(5)"
+  model "ball"
+  boundingObject USE BALL_SHAPE
+  locked TRUE
+}
